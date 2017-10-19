@@ -38,14 +38,7 @@ public class User implements Serializable {
 	public User() {
 		super();
 	}
-	public User(String email, String nickName, String passWord, String userName, String regTime) {
-		super();
-		this.email = email;
-		this.nickName = nickName;
-		this.passWord = passWord;
-		this.userName = userName;
-		this.regTime = regTime;
-	}
+
 	public Long getId() {
 		return id;
 	}

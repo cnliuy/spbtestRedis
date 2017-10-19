@@ -12,7 +12,15 @@ spring:
     database: postgresql
   datasource:
     driver-class-name: org.postgresql.Driver
-
+ #  url: jdbc:postgresql://202.99.114.136:10012/testacti
+    url: jdbc:postgresql://202.99.114.136:10012/spbtestred  # test
+ #  url: jdbc:postgresql://202.99.114.136:10018/ceserver  # using
+ #  url: jdbc:postgresql://192.168.60.23:3080/ceserver    # inner net using
+ #  url: jdbc:postgresql://127.0.0.1:3080/ceserver
+ #  url: jdbc:postgresql://127.0.0.1:3080/testacti
+ #  url: jdbc:postgresql://127.0.0.1:3080/ceserver
+    username: postgres
+    password: tvpgsql135
   data:
     jpa:
       repositories:
