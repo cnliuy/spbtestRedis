@@ -34,7 +34,8 @@ public class TestRedis {
 	    
 	    @Test
 	    public void testObj() throws Exception {
-	        User user=new User("aa1@126.com", "aa1", "aa1234561", "aa1","1231");
+	        User user =new User();//new User("aa1@126.com", "aa1", "aa1234561", "aa1","1231");
+	 
 	        ValueOperations<String, User> operations=redisTemplate.opsForValue();
 	        operations.set("com.ly.spbtestRedis.domain", user);
 	        operations.set("com.ly.spbtestRedis.domain", user,1,TimeUnit.SECONDS);
